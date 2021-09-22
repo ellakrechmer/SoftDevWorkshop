@@ -2,8 +2,7 @@ from random import *
 pd1=["Ella", "Ivan", "Justin"]
 pd2=["John", "Amanda", "Peter"]
 
-r=randint(0,len(pd1)+len(pd2)-1);
-if r>=len(pd1):
-    print(pd2[r-len(pd1)])
+if (randint(0,1)==0):
+    print(pd1[randint(0, len(pd1)-1)])
 else:
-    print(pd1[r])
+    print(pd2[randint(0, len(pd2)-1)])
