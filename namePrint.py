@@ -1,3 +1,8 @@
+#Ella Krechmer
+#SoftDev
+#NamePrint/Classwork/Print a random name from two lists of students
+#2021-09-22
+
 from random import *
 pd1=["Ella", "Ivan", "Justin"]
 pd2=["John", "Amanda", "Peter"]
