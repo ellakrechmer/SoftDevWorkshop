@@ -1,2 +1,2 @@
 # workshop of Ella Krechmer
-**SoftDev 2021-2022s**
+**SoftDev 2021-2022**
