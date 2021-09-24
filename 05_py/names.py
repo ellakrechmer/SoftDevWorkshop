@@ -7,9 +7,11 @@
 #classwork, combining the lists and picking from them, and putting them into a function. We also
 #used Christopher's code for reading the names from two files.
 
-#Discoveries:
-#Questions
-#Comments
+#Discoveries: I learned/remembered how to read from files in Python ("r" means read). I also learned
+#how to take parameters from the terminal, by importing sys and using argv. I also learned a Python
+#convention in using main (at the bottom of this file), which just makes sure that if there is a main
+#function, it is run when the program is run.
+
 
 from random import *
 import sys
