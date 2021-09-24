@@ -14,10 +14,7 @@
 from random import *
 import sys
 
-pd1=["Ella", "Christopher", "Ivan"]
-pd2=["Justin", "Naomi", "Jeffrey"]
-
-def readNames(filename: str):
+def readNames(filename):
     filecontents=""
     with open(filename, "r") as f:
         filecontents=f.read()
@@ -28,9 +25,19 @@ def readNames(filename: str):
 
     return names
 
-def printNames(pd1, pd2):
+def main():
+    #checks to make sure you are putting in the text files in the argument in terminal
+    if len(sys.argv) != 3:
+        print("Incorrect arguments. Usage: python names.py pd1_filename pd2_filename")
+        return
+
+    pd1=readNames(sys.argv[1])
+    pd2=readNames(sys.argv[2])
     names=pd1+pd2
+
     randname=names[randrange(len(names))]
     print(randname)
 
-printNames(pd1, pd2)
+#python convention to have main run (from Christopher)
+if __name__ == "__main__":
+    main()
