@@ -16,6 +16,7 @@
 from random import *
 import sys
 
+
 def readNames(filename):
     filecontents=""
     with open(filename, "r") as f:
@@ -33,9 +34,14 @@ def main():
         print("Incorrect arguments. Usage: python names.py pd1_filename pd2_filename")
         return
 
-    pd1=readNames(sys.argv[1])
-    pd2=readNames(sys.argv[2])
-    names=pd1+pd2
+    periods={
+        'pd1':readNames(sys.argv[1]),
+        'pd2':readNames(sys.argv[2])
+    }
+
+    names=[]
+    for period in periods.keys():
+        names+=periods[period]
 
     randname=names[randrange(len(names))]
     print(randname)
