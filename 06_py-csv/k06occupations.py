@@ -4,9 +4,10 @@
 
 #SUMMARY: We read in the data from a csv file (used example code from documentation) to a dictionary.
 #Then we removed the first and last row since those are not values that we will be using. We also
-#made the percentages (value of the keys) floats, and then multiplied them by 10 so they can be used
+#made the percentages (values of the keys) floats, and then multiplied them by 10 so they can be used
 #as integers when generating random numbers. We picked a random number out of 1000 (since we multiplied
-#by 10) and then went through the dictionary to see if the random number corresponded to a specific key.
+#by 10) and then went through the dictionary by ranges to see if the random number corresponded to a
+#specific key.
 
 #09-28-2021
 
@@ -24,7 +25,7 @@ with open('occupations.csv', newline='') as csvfile:
     data={}
     for row in spamreader:
         data[row[0]]=float(row[1])*10
-        
+
     #randomly print out job based on percentages
     n=randrange(1000)
     start=0
