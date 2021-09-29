@@ -1,5 +1,5 @@
-##Gold Medalists: Ella Krechmer, Ivan Lam, Justin Morrill
-##SoftDev
-##K06 -- StI/O: Divine your Destiny!/Reading in csv files and using the data
+## Gold Medalists: Ella Krechmer, Ivan Lam, Justin Morrill
+## SoftDev
+## K06 -- StI/O: Divine your Destiny!/Reading in csv files and using the data
 
 First, we used a **csv reader** to open and read our file occupations.csv, and stored it in a list of lists that contained the keys and values we needed to use. Then we removed the first and last elements of the list since we didn't need to use the first and last lines of the csv file. Then, we put the data into a **dictionary**, using the first elements of each list as the keys, and the second elements as the corresponding values. When adding the values, we converted them to floats and then multiplied them by 10, so they would be integers, making it easier to work with random numbers. With the dictionary, *it was easier to see the relationship between the key and the value* (the occupation and the percentage). For the **weighted randomized selection**, based on each weight *we gave the occupation an interval within the range from 0 to 1000* (1000 not included), and then generated a random number from 0 to 1000. *Then we looped through the dictionary, checking whether or not the random number was in the range of the given occupation*, and if it was, we printed it out (if not, we kept looking).
