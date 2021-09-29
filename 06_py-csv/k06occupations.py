@@ -15,18 +15,16 @@ from random import *;
 with open('occupations.csv', newline='') as csvfile:
     #read in data
     spamreader=csv.reader(csvfile, delimiter=',')
+    #remove first and last row
+    spamreader=list(spamreader)
+    spamreader.pop(0)
+    spamreader.pop(-1)
     #add to dictionary
+    #make the percentages floats, then multiply by 10 so they're easier to work with later
     data={}
     for row in spamreader:
-        data[row[0]]=row[1]
-    #remove first and last row
-    keyslist=list(data)
-    data.pop(keyslist[0])
-    data.pop(keyslist[len(keyslist)-1])
-    #make the percentages floats, then multiply by 10 so they're easier to work with later
-    for job in data:
-        data[job]=float(data[job])*10
-
+        data[row[0]]=float(row[1])*10
+        
     #randomly print out job based on percentages
     n=randrange(1000)
     start=0
