@@ -1,4 +1,9 @@
-Haotian Gan (TrioMate)
+Toast: Ella Krechmer, Haotian Gan, Justin Morrill
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity/See Others' Code, Learn About Virtual Environments
+09-30-2021
+
+Haotian Gan (Trio-mate)
 - code accounts for extreme conditions/errors in k01
 - I like the use of user input in k05, makes it more user friendly
 - actual randomization in k05 is really simple, but the idea of the user doing all the steps themselves as the program is running is really cool

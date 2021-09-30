@@ -1,0 +1,10 @@
+Toast: Ella Krechmer, Haotian Gan, Justin Morrill
+SoftDev
+K08 -- Cross Pollination and Virtual Insanity/See Others' Code, Learn About Virtual Environments
+09-30-2021
+
+- venv means "virtual environment"
+- a virtual environment can be used to resolve conflicting requirements, like when different applications require different versions of Python.
+- you write a path in the command line which is where your virtual environment will be
+- this command creates a virtual environment in the path you state
+- besides the resolution of conflicting requirements, I'm still not really sure what virtual environments are used for.
