@@ -1,0 +1,14 @@
+Haotian Gan (TrioMate)
+- code accounts for extreme conditions/errors in k01
+- I like the use of user input in k05, makes it more user friendly
+- actual randomization in k05 is really simple, but the idea of the user doing all the steps themselves as the program is running is really cool
+- in k06, I think "Unemployed" is a great way to count for the last 0.2%, my group didn't consider this "Other"
+
+Emma Buller
+- for both k01 and k05, I like the way they did user input to help pick a period to randomly choose from
+- I'm very impressed with how all the code is very simple and concise, even in k06 where my group had many steps to go through
+
+Owen Yaggy
+- even for k05, where there wasn't a lot of code, lots of in-line comments, which makes code more readable
+- similar to my group, for k06, multiplied percentage by 10 to make it an integer
+- interesting that some of the old code from k06 that was used in testing is still there, just commented out, shows the thought process
