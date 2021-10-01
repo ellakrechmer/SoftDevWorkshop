@@ -1,0 +1,17 @@
+Vibe: Ella Krechmer, Ivan Lam, Naomi Naranjo, plus respective rubber duckies (duo of 3)
+SoftDev
+K09-- Simple Path to Greatness/Running first Flask app
+10-01-2021
+
+Before Running app.py:
+0. This reminds me of creating a new element in Java that pertains to a certain class.
+1. When I see the '/' it reminds me of path directories in the terminal.
+2. I think it'll print in terminal once I run it. 3. It says it'll print __name__ so I assume it's the name corresponding to the Flask element or maybe the file name, since that isn't defined yet.
+3. I don't think this will appear anywhere unless you want to print out the value of the function and I don't think run() will do that.
+4. This reminds me of when we ran functions that were part of specific classes in Java for specific elements of those classes.
+
+After Running:
+Notes:
+- got a warning "This is a development server. Do not use it in a production deployment."
+- took a long time to run, "Serving Flask app 'app' (lazy loading)", then I exited out of it because I thought it wouldn't work
+- said I had debug mode off
