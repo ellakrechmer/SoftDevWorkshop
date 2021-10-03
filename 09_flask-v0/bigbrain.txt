@@ -15,3 +15,6 @@ Notes:
 - got a warning "This is a development server. Do not use it in a production deployment."
 - took a long time to run, "Serving Flask app 'app' (lazy loading)", then I exited out of it because I thought it wouldn't work
 - said I had debug mode off
+- a friend from period 2 (Michael Borczuk) told me to run it in browser, and it worked
+- it printed out "No hablo queso!", which I didn't think it would
+- it printed out __name__ in the terminal, as opposed to actually on the screen, but it said "__main__" since __name__ was a placeholder
