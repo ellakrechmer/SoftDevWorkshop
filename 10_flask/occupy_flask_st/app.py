@@ -29,9 +29,15 @@ with open('occupations.csv', newline='') as csvfile:
 def occupation_printer():
     #makes a string that you will eventually display
     ans=""
+
     #adds TNPG and roster
-    ans+="TNPG+roster"
-    ans+="<br>"
+    ans+="Gold Medalists: Ella Krechmer, Ivan Lam, Justin Morrill, Naomi Naranjo"
+    ans+="<br>"*2
+
+    #prints out all occupations
+    for row in data:
+        ans+=str(row)+"<br>"
+
     #randomly print out job based on percentages
     n=randrange(1000)
     start=0
@@ -42,6 +48,7 @@ def occupation_printer():
         end+=data[job]
         if (start<=n<end):
             #add random selection to answer
+            ans+="<br>"+"Random Occupation: "
             ans+=job
     return ans
 
