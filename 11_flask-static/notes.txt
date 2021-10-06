@@ -1,0 +1,12 @@
+Gold Medalists: Ella Krechmer, Ivan Lam, Justin Morrill, Naomi Naranjo
+SoftDev
+K11 -- Some Things Never Change
+SUMMARY:
+10-06-2021
+
+Predictions:
+- app will run hello_world() and have debug mode on, since file is imported
+- will return "No hablo queso!" which you will see on the webpage
+- will print out "the name of this module is..." and then will print out the name of the module (__main__ in this case)
+
+After running, our predictions were all correct.
