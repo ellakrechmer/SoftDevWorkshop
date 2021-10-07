@@ -1,4 +1,18 @@
 Gold Medalists: Ella Krechmer, Ivan Lam, Justin Morrill, Naomi Naranjo
 SoftDev
-K12 -- ...or The Only Constant is Change?
+K12 -- ...or The Only Constant is Change?/observing paths with app.py in browser
 10-07-21
+
+Before Running:
+0. It will probably give you an error because you can't use it without importing it first.
+1. htpps://[local_host]/my_foist_template
+2. We think that this well use the formatting of the html file, and replace foo with "fooooo" and collection with coll wherever they are, though I'm not sure where foo and collection come from.
+
+Notes:
+- we have two paths in the code now
+- I think when we go to the second path the formatting will change
+
+After Running:
+- When you use the my_foist_template path, it follows the formatting of the html file
+- foo is the title of the app, so it is replaced with "fooooo" in the newer path
+- collection is a set of values you loop through from the html file, it will loop through the list coll so that each item can be printed on a separate line
