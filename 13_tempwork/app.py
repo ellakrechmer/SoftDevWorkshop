@@ -4,7 +4,7 @@
 #10-08-21
 
 # Import Flask so app will work
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 # Import the things needed for occupation-chooser to work
@@ -39,7 +39,8 @@ def makeList():
 #What shall be shown
 @app.route("/occupyflaskst")
 def HEY_WORLD():
-    return selectJob() + makeList()
+    return selectJob()+makeList()
 
 #RUN
 app.run()
+app.debug=True
