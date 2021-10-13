@@ -1,0 +1,12 @@
+AWEsome: Ella Krechmer, Aaron Contreras, William Chen
+SoftDev
+K13 -- Template for Success
+10-08-21, 10-12-21
+
+- since we have done many versions of app.py, it wasn't very difficult to simply print out the occupations, and it's always very interesting seeing new triomates' code
+- at first we struggled a bit with tablified.html, but looking at the html file from k12 helped us realize we needed to use {{}}
+- the table headers were just job class and percentage, the first row of the csv file
+- to add the actual occupations and percentages, we looped through our collection, which we defined to be the dictionary in our render_template
+- in each row, one value was the occupation (the key) and the other was the percentage (the value)
+- it's interesting that you need to actually end the for loop in an html file, usually it just ends when you indent out of it
+- also interesting that you can even do a for loop in html, and it helps a lot with styling
