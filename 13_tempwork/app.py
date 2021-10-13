@@ -39,7 +39,7 @@ def makeList():
 #What shall be shown
 @app.route("/occupyflaskst")
 def HEY_WORLD():
-    return selectJob()+makeList()
+    return render_template('tablified.html', title = "occupations", collection = dictionary)
 
 #RUN
 app.run()

@@ -5,21 +5,27 @@
   Oct 2021
  -->
 
-<html>
+ <html>
 
-  <head>
-    <title> {{ foo }} </title>
-  </head>
+   <head>
+     <title> {{ title }} </title>
+     <h2>A.W.E.some: Ella Krechmer, Aaron Contreras, William Chen</h2>
+   </head>
 
-  <body>
-    {% for item in collection %}
-      <table>
+   <body>
+   <table>
+     <tr>
        <th>Job Class</th>
        <th>Percentage</th>
-      </table>
+     </tr>
+     {% for key,value in collection.items() %}
+       <tr>
+         <td>{{key}}</td>
+         <td>{{value}}</td>
+       </tr>
+     {% endfor %}
+       </table>
+      <br>
+   </body>
 
-     <br>
-    {% endfor %}
-  </body>
-
-</html>
+ </html>
