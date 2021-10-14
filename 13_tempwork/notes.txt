@@ -10,3 +10,10 @@ K13 -- Template for Success
 - in each row, one value was the occupation (the key) and the other was the percentage (the value)
 - it's interesting that you need to actually end the for loop in an html file, usually it just ends when you indent out of it
 - also interesting that you can even do a for loop in html, and it helps a lot with styling
+
+EGO
+- It's interesting that not only do you oversee errors in your code initially due to cognitive dissoncence when you attach yourself to it.
+  But also, when the errors do uncover themselves inevitably, they are more likely to affect your mentality and hurt your workflow. So, in the
+  long term egoless programming is far more efficient.
+- It's worth emphasizing the ripple effect of small interactions within our own environment. And the importance of destigmatizing asking one another
+  for help.
