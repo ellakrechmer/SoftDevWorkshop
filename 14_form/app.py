@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# set: Shyne Choi, Ella Krechmer, Tina Nguyen
 # SoftDev
-# Oct 2021
+# K14 ..Form and Function / We used the form and use dthe response to
+# 2021-10-14
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -24,35 +25,34 @@ PROTIP: Insert your own in-line comments wherever they will help your future sel
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    #only this will be seen on the webpage
+    #print("\n\n\n")
+    #print("***DIAG: this Flask obj ***")
+    #print(app)
+    #print("***DIAG: request obj ***")
+    #print(request)
+    # print("***DIAG: request.args ***")
+    # print(request.args)
+    print("***DIAG: request.args['username']  ***")
+    print(request.args['username'])
+    # print("***DIAG: request.headers ***")
+    # print(request.headers)
     return render_template( 'login.html' )
 
 
 @app.route("/auth") # , methods=['GET', 'POST'])
 def authenticate():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
+    #print("\n\n\n")
+    #print("***DIAG: this Flask obj ***")
+    # print(app)
+    # print("***DIAG: request obj ***")
+    # print(request)
+    # print("***DIAG: request.args ***")
     print(request.args)
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
+    return "Hello, " + request.args['username']  #response to a form submission
 
 
 
