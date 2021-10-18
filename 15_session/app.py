@@ -1,7 +1,7 @@
 # Setting the Bar: Shyne Choi, Ella Krechmer, Tina Nguyen
 # SoftDev
-# K14 ..Form and Function / We used customized form responses
-# 2021-10-14
+# K15:Sessions Greetings
+# 2021-10-18
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -26,16 +26,10 @@ PROTIP: Insert your own in-line comments wherever they will help your future sel
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage():
     # print("\n\n\n")
-    # print("***DIAG: this Flask obj ***")
-    # print(app)
-    # print("***DIAG: request obj ***")
-    # print(request)
-    # print("***DIAG: request.args ***")
-    # print(request.args)
     # print("***DIAG: request.args['username']  ***")
     # print(request.args['username'])
-    # print("***DIAG: request.headers ***")
-    # print(request.headers)
+    # print("***DIAG: request.args['password']  ***")
+    # print(request.args['password'])
     return render_template( 'login.html' )
 
 
@@ -62,9 +56,17 @@ def authenticate():
     #we are retrieving entered username and password here
     username=request.args['username']
     password=request.args['password']
+    #(username==myuser and password==mypass)
+    # if (username!=myuser or password!=mypass):
+    #     raise Exception("wrong login")
+    # try:
+    #     return render_template( 'response.html', username=request.args['username'], password=request.args['password'])  #response to a form submission
+    # except if ((username!=myuser or password!=mypass)):
+    #     return render_template( 'login.html' )
     if (username==myuser and password==mypass):
-        return render_template( 'response.html', username=request.args['username'], password=request.args['password'])  #response to a form submission
-
+        return render_template( 'response.html', username=username)
+    else:
+        return render_template('login.html', error="incorrect login")
 
 
 if __name__ == "__main__": #false if this file imported as module

@@ -2,17 +2,8 @@
 <!--
      set: Shyne Choi, Ella Krechmer, Tina Nguyen
      SoftDev
-     K14 ..Form and Function / We used customized form responses
-     2021-10-14
-
-     simple demo of HTML forms via Flask
-
-     trioTASK:
-     If any member of team has forms experience, let their know-how osmote.
-     If no one does, seek external assistance.
-     PROTIP: Revisit code from intro if you have it.
-     Peruse this code together and discuss how it should work, in conjunction with the back end apparatus.
-
+     K15: Session Greetings
+     2021-10-18
  -->
 
 
@@ -33,12 +24,13 @@
     <h3>
       Enter your username and password.
     </h3>
+    <p>{{error}}</p>
     <form action="/auth">
       <h4>Username: </h4>
       <input type="text" name="username">
       <br>
       <h4>Password: </h4>
-      <input type="text" name="password">
+      <input type="password" name="password">
       <br>
       <br>
       <input type="submit" name="sub1">
