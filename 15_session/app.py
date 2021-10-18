@@ -65,12 +65,12 @@ def authenticate():
     #     return render_template( 'login.html' )
     if (username==myuser and password==mypass):
         return render_template( 'response.html', username=username)
-    elif (username=="" and password==""):
-        return render_template('login.html', error="Must submit valid username and password")
+    elif (username=="" or password==""):
+        return render_template('login.html', error="Cannot submit blank username or password")
     elif (username!=myuser):
         return render_template('login.html', error="Incorrect username")
     elif (password!=mypass):
-        return render_template('login.html', error="Incorrect passWORD")
+        return render_template('login.html', error="Incorrect password")
 
 
 if __name__ == "__main__": #false if this file imported as module
