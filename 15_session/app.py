@@ -6,6 +6,8 @@
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
+         #
+
 from random import *
 import os
 
@@ -35,7 +37,9 @@ def disp_loginpage():
     # print(request.args['username'])
     # print("***DIAG: request.args['password']  ***")
     # print(request.args['password'])
-    return render_template( 'login.html' )
+     if ("username" != None):
+        return render_template( 'response.html', username=session.get("username"))
+     return render_template( 'login.html' )
 
 
 @app.route("/auth") # , methods=['GET', 'POST'])
@@ -70,9 +74,9 @@ def authenticate():
     # except if ((username!=myuser or password!=mypass)):
     #     return render_template( 'login.html' )
     #app.config['secret_key'] = os.urandom(32)
-    session[username] = password
-    if (session) or (username==myuser and password==mypass):
-        return render_template( 'response.html', username=username)
+    if (username==myuser and password==mypass):
+        session["username"] = username
+        return render_template( 'response.html', username = session["username"])
     elif (username=="" or password==""):
         return render_template('login.html', error="Cannot submit blank username or password")
     elif (username!=myuser):
@@ -80,6 +84,12 @@ def authenticate():
     elif (password!=mypass):
         return render_template('login.html', error="Incorrect password")
 
+@app.route("/logout")
+def logout():
+    #if "username" in session:
+    session["username"] = None
+    session.pop("username", None)
+    return render_template('login.html')
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
