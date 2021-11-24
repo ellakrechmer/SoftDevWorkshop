@@ -1,5 +1,12 @@
 Ella Krechmer, Ivan Lam
 Softdev
 K18 -- Comic Sans Syndrome (recreating an image using html and css)
-11-22-21
-Time Spent:
+11-22/23-21
+Time Spent: 60 min
+
+- using flex really helps with layout
+- Digital Color Meter on Mac helped find exact colors
+- font was Arial
+- inline code: write inside with tags using style=
+- internal code: have a style tag with all separate tags each containing their own attributes
+- external code: separate css file that's basically everything inside the style tag, needs to be imported
