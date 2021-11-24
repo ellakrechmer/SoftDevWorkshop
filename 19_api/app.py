@@ -1,6 +1,6 @@
 # Ella Krechmer, Ivan Lam
 # SoftDev
-# K19 --A RESTful Journey Skyward
+# K19 -- API
 # 2021-11-23
 
 from flask import Flask, render_template
