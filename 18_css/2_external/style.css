@@ -1,0 +1,36 @@
+.bg{
+  background-color: rgb(102,102,102);
+  font-family: Arial;
+}
+h1{
+  background-color: rgb(190,190,190);
+  text-align: center;
+  color: white;
+}
+body{
+  background-color: rgb(118,118,118);
+  padding: 0px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.sec1{
+  flex: 1;
+  padding-left: 10px;
+}
+.sec2{
+  flex: 2;
+}
+.footer{
+  background-color: rgb(86,86,86);
+  text-align: right;
+  color: rgb(115,118,116);
+  padding:10px;
+  font-size: 15px;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  color: rgb(220,220,220);
+}
