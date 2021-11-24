@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Clyde "Thluffy" Sinclair
-       SoftDev pd0
+  <!-- Ella Krechmer
+       SoftDev pd1
        K18 - CSS basics
-       2021-11-23t
+       2021-11-23
 
-	 WORK FILE for CSS
+   WORK FILE for CSS
     -->
+
+<style>
+.bg{
+  background-color: rgb(102,102,102);
+  font-family: Arial;
+}
+h1{
+  background-color: rgb(190,190,190);
+  text-align: center;
+  color: white;
+}
+body{
+  background-color: rgb(118,118,118);
+  padding: 0px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.sec1{
+  flex: 1;
+  padding-left: 10px;
+}
+.sec2{
+  flex: 2;
+}
+.footer{
+  background-color: rgb(86,86,86);
+  text-align: right;
+  color: rgb(115,118,116);
+  padding:10px;
+  font-size: 15px;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  color: rgb(220,220,220);
+}
+</style>
+
 
   <head>
     <meta charset="utf-8"/>
     <title>foo title</title>
   </head>
 
+  <div class="bg">
+
+  <h1>foo heading 1</h1>
+
   <body>
-    <h1>foo heading 1</h1>
+    <div class="content">
+    <div class="sec1">
     <h3>nav foo</h3>
     <ul>
-      <li><a href="">dis</a></li>
-      <li><a href="">dat</a></li>
-      <li><a href="">de udda ting</a></li>
+      <li>dis</li>
+      <li>dat</li>
+      <li>de udda ting</li>
     </ul>
+    </div>
+
+    <div class="sec2">
     <h2>main foo heading</h2>
     <p>tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk tk
+    </div>
 
-      <br>
-      <br>
-
+    </div>
+    <div class="footer">
       Copyright &copy; 2021 Ella Krechmer and Ivan Lam
-
+    </div>
   </body>
-
+</div>
 </html>
