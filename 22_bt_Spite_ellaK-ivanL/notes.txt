@@ -1,0 +1,8 @@
+Spite: Ella Krechmer and Ivan Lam (+Sean Ging, Patrick Ging, Theo Fahey)
+SoftDev
+K22: Who Does Frame Work For? -- Bootstrap/Foundation CSS
+
+- you need to link the bootstrap in the head
+- some things aren't working? we were trying to interact with the accordion but besides what was showing up originally, nothing happened (e.g. when we clicked to open another accordion section, it didn't work)
+- dropdown button not working? but looks much nicer than in regular html/css
+- apparently things that aren't working just require a lot of movement and javascript, but since we don't have it we aren't really able to interact (I assume because you aren't changing the states of anything)
