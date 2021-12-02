@@ -1,0 +1,21 @@
+Spite: Ella Krechmer Ivan Lam
+Soft Dev
+k23 -- No. 2?
+12-01-2021
+
+
+- interacting functionality because there's a lot of links which are easy to make with basics
+- lots of different colors, layouts, types of components
+- on the webpage itself, everything is very easy to understand and is organized well
+- all of the styling comes from the various css files; running just the html creates a very simple, unformatted design
+- grids are in fact cool in foundation, especially where you scroll inside a grid (text takes up the same amount of space but you can scroll through it)
+
+QCC:
+- while for boostrap you link your html file to bootstrap and you can do all your styling right there, while in foundation you need separate css files that you link
+- there are a lot of JavaScript files in their original folder but we didn't need them to display everything as intended, so why would you need it in this case where there's no animation?
+
+Q0:
+We discussed with the duo next to us, asking to elaborate on what exactly foundation is.
+
+Q1:
+Bootstrap, since there are a lot more premade classes and less files needed to be made, so it just feels much easier and more efficient.
