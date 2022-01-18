@@ -41,6 +41,19 @@ In order to complete this tutorial, you will need to have an Ubuntu 20.04 server
     ssh sammy@your_server_ip
     sudo command_to_run
     ```
+6. Remove root access on your virtual machine through user.
+    ```
+    $ sudo su -
+    $ nano /etc/ssh/sshd_config
+    PermitRootLogin no
+    ```
+
+7. Restart to apply changes
+    ```
+    # systemctl restart sshd
+    # service sshd restart
+    # /etc/init.d/ssh restart
+    ```
 
 ### Installing Apache:
 
