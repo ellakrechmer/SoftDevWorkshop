@@ -1,0 +1,2 @@
+- you have to make sure to install python3, because otherwise python2 is running
+- make sure you don't run on your local host, but on the IP address of your droplet
