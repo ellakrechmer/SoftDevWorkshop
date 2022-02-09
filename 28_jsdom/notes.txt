@@ -1,0 +1,26 @@
+EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
+SoftDev pd2
+K28 -- Getting more comfortable with the dev console and the DOM
+2022-02-08
+
+
+document.getElementById(<ID>)
+--.--ByTagName(<TAG>)
+--.--ByClassName(<CLASS>)
+
+HTML
+<button id="b"> The button </b>
+JS
+var dasbut = document.getElementById("b");
+dasbut.addEventListener('click', fxnName);
+
+- when the function has no parameters, just write its name (no parentheses!)
+- when the function has parameters, add it like this
+  dasbut.addEventListener('click', function(){addItem("woohoo")});
+    -- note the function()
+
+
+- Use `document.write()` in script tags to insert JavaScript output into HTML
+- was very confusing which class is used where
+    - sometimes the last class tag is used, like in "green blue" it shows up blue, but sometimes the first is used, like "blue green" also shows up blue
+    - when we were running red() after stripe, it usually wouldn't update, or vice versa, but it did add the class in the front
