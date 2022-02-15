@@ -9,8 +9,14 @@ var mode = "rect";
 
 var toggleMode = (e) => {
     console.log("toggle");
-    if(mode === "rect") mode = "circ";
-    else mode = "rect";
+    if(mode === "rect") {
+      mode = "circ";
+      document.getElementById('buttonToggle').innerHTML="Circle";
+    }
+    else {
+      mode = "rect";
+      document.getElementById('buttonToggle').innerHTML="Rectangle";
+    }
 }
 
 var drawRect = (e) => {
