@@ -1,7 +1,7 @@
 // EELs :: Eliza Knapp, Ella Krechmer, Lucas Lee
 // SoftDev pd0
 // K30 -- canvas with JS
-// 2022-02-014
+// 2022-02-015
 
 var c = document.getElementById("slate");
 var ctx = c.getContext("2d");
