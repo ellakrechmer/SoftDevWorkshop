@@ -9,19 +9,18 @@ var dvdButton = document.getElementById("dvdButton");
 var stopButton = document.getElementById("stopButton");
 
 var ctx = c.getContext("2d");
-ctx.fillStyle = "blue";
 var img=new Image();
 img.src="logo_dvd.jpg";
 
+var imgWidth=90;
+var imgHeight=60;
 
-var x=c.height/2;
-var y=c.width/2;
+var x;
+var y;
 
-var imgWidth=60;
-var imgHeight=40;
 
-dx=5;
-dy=5;
+dx=1;
+dy=1;
 
 
 var clear = (e) => {
@@ -75,5 +74,9 @@ var drawDVD = (e) => {
 }
 
 dotButton.addEventListener("click", drawDot);
-dvdButton.addEventListener("click", drawDVD);
+dvdButton.addEventListener("click", function(event){
+  x=Math.floor(Math.random()*(c.width-imgWidth));
+  y=Math.floor(Math.random()*(c.height-imgHeight));
+  drawDVD();
+});
 stopButton.addEventListener("click", stopIt);
