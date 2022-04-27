@@ -1,0 +1,11 @@
+Ella Krechmer
+SoftDev Pd 2
+K34: Another DB Perspective -- Introduction
+2022-04-26
+
+- all software is free
+- practice exercises, quizzes, graded assignments
+- class discussion forum (like a Piazza)
+- database=structured way to store data
+- no sql database (no tables), like a library card catalog, but mongoDB uses documents stored in collections
+- mongoDB = no sql document database

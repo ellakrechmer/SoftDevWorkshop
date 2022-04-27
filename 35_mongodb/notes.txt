@@ -1,0 +1,14 @@
+Ella Krechmer
+SoftDev Pd 2
+K34: Another DB Perspective -- Chapter 1
+2022-04-26
+
+- a document is a way to store data as a set of field value pairs
+  --> each field has a value assigned to it
+- a collection is an organized store of documents in MongoDB, usually with common fields between documents
+- Atlas is used to set up databases in the cloud
+- Atlas uses cluster deployment
+  --> clusters = groups of servers that store your data
+  --> these are stored in a replica set, a few connected MongoDB instances that store the same data, which helps save data in multiple copies
+  --> an instance is a single machine running a software
+- Atlas can help manage cluster creation, run and maintain database deployment, use the cloud server of your choice, and experiment with new tools
