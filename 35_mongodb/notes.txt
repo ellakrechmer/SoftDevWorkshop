@@ -1,6 +1,6 @@
 Ella Krechmer
 SoftDev Pd 2
-K34: Another DB Perspective -- Chapter 1
+K35: Another DB Perspective -- Chapter 1
 2022-04-26
 
 - a document is a way to store data as a set of field value pairs

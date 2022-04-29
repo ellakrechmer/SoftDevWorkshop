@@ -1,0 +1,19 @@
+Ella Krechmer
+SoftDev Pd 2
+K36: Another DB Perspective -- Chapter 2
+2022-04-29
+
+- using JSON files for the documents
+- start and end with curly braces -
+- separate each key and value with a colon
+- each key-value pair with a comma
+- keys surrounded by quotation marks–actually called fields
+- JSON is user-friendly, readable, and familiar, but is text-based, space-consuming, and limited
+- BSON=binary JSON --> bridges the gap between binary representation and JSON format (mongoDB uses this)
+- speed, space, flexibility, high performance
+- mongoimport+mongoexport (JSON) vs mongorestore+mongodump (BSON)
+- uri = uniform resource identifier
+- namespace = collection name + database name
+- it=iterate
+- pointer=direct address to memory location
+- pretty() makes formatting look nice
